@@ -1,10 +1,16 @@
 // const env = require("./env.js")
-const env = require("./env.js")
+const config = require('config');
 const Sequelize = require("sequelize");
 const tedious = require('tedious');
 
-const sequelize = new Sequelize(process.env.database, process.env.username, process.env.password, {
-  host: process.env.host,
+
+const database = config.get('server.database');
+const username = config.get('server.username');
+const password = config.get('server.password');
+const host = config.get('server.host');
+
+const sequelize = new Sequelize(database, username, password, {
+  host:host,
   dialect:"mssql",
   operatorsAliases: false,
 });

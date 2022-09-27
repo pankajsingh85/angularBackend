@@ -1,4 +1,4 @@
-const tedious = require('tedious');
+// const tedious = require('tedious');
 
 // const az_identity = require('@azure/identity');
 // const az_kv = require('@azure/keyvault-secrets');
@@ -17,16 +17,16 @@ const tedious = require('tedious');
 
 // f();
 
-const env = {
-    database: "exit_test",
-    username: "pankajsingh",
-    password: "abcd1234",
-    host: "10.0.0.6",
-    dialect: "mssql",
-    dialectModule: tedious
-};
+// const env = {
+//     database: "exit_test",
+//     username: "pankajsingh",
+//     password: "abcd1234",
+//     host: "10.0.0.6",
+//     dialect: "mssql",
+//     dialectModule: tedious
+// };
 
-module.exports=env;
+// module.exports=env;
 //some 
 // const env = {
 //     database: "exit_test",
