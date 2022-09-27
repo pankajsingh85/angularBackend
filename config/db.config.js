@@ -9,10 +9,13 @@ const username = config.get('server.username');
 const password = config.get('server.password');
 const host = config.get('server.host');
 
+console.log(database+" "+username+" "+host)
+
 const sequelize = new Sequelize(database, username, password, {
   host:host,
   dialect:"mssql",
   operatorsAliases: false,
+  dialetModule:tedious
 });
 
 
