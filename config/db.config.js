@@ -14,8 +14,7 @@ console.log(database+" "+username+" "+host)
 const sequelize = new Sequelize(database, username, password, {
   host:host,
   dialect:"mssql",
-  operatorsAliases: false,
-  dialetModule:tedious
+  operatorsAliases: false
 });
 
 
