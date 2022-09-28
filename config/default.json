@@ -3,7 +3,7 @@
         "database": "exit_test",
         "username": "pankajsingh",
         "password": "abcd1234",
-        "host": "20.244.33.239",
+        "host": "10.0.1.4",
         "dialect": "mssql"
     }
   }
