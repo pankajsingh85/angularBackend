@@ -1,7 +1,7 @@
 {
     "server": {
         "database": "exit_test",
-        "username": "pankajsingh",
+        "username": "pankaj",
         "password": "abcd1234",
         "host": "10.0.1.4",
         "dialect": "mssql"
