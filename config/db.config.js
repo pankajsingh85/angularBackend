@@ -7,12 +7,12 @@ const tedious = require('tedious');
 const database = config.get('server.database');
 const username = config.get('server.username');
 const password = config.get('server.password');
-const host = config.get('server.host');
+const hostValue = config.get('server.host');
 
-console.log(database+" "+username+" "+host)
+console.log(database+" "+username+" "+hostValue)
 
 const sequelize = new Sequelize(database, username, password, {
-  host:host,
+  host:hostValue,
   dialect:"mssql",
   operatorsAliases: false
 });
